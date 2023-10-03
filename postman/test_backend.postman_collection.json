@@ -1,0 +1,322 @@
+{
+	"info": {
+		"_postman_id": "095280de-5e2d-4187-b7c4-b220a381610a",
+		"name": "test_backend",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "30205875"
+	},
+	"item": [
+		{
+			"name": "customers",
+			"item": [
+				{
+					"name": "customer all",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/customer",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"customer"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "customer detail",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/customer/651b82fbf7434b36ed07bbeb",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"customer",
+								"651b82fbf7434b36ed07bbeb"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "customer delete",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/customer/651b82fbf7434b36ed07bbeb",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"customer",
+								"651b82fbf7434b36ed07bbeb"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "customer create",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"name\": \"usern\",\n  \"number\": \"sdfgdf4\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/customer",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"customer"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "customer update",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"name\": \"usern\",\n  \"number\": \"sdfgdf4\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/customer/651b82fbf7434b36ed07bbeb",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"customer",
+								"651b82fbf7434b36ed07bbeb"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "loans",
+			"item": [
+				{
+					"name": "loan all",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/loan",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"loan"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "loan pending",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/loan/pending",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"loan",
+								"pending"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "loan paid",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/loan/paid",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"loan",
+								"paid"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "loan detail",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/loan/651b932327888447dc21ec53",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"loan",
+								"651b932327888447dc21ec53"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "loan delete",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/loan/651b938dfcf1523a09599461",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"loan",
+								"651b938dfcf1523a09599461"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "loan create",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"customer\": \"651b82fbf7434b36ed07bbeb\",\n  \"totalAmount\": 3456457.20\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/loan",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"loan"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "register payment",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"paidAmount\": 3456457.20\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/loan/651b94b3c986cf0d9966ce6a/registerPayment",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"loan",
+								"651b94b3c986cf0d9966ce6a",
+								"registerPayment"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "loan update",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"customer\": \"651b82fbf7434b36ed07bbeb\",\n  \"totalAmount\": 3456457\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/loan/651b8a4a59a7da5c3a26cd81",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"loan",
+								"651b8a4a59a7da5c3a26cd81"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}

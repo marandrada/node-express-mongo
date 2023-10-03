@@ -1,0 +1,22 @@
+version: "3.2"
+
+services:
+  mongo:
+    image: mongo:6
+    restart: always
+    environment:
+      MONGO_INITDB_ROOT_USERNAME: mongou
+      MONGO_INITDB_ROOT_PASSWORD: mongop
+    ports:
+      - 27017:27017
+    volumes:
+      - ./data:/data/db
+  backend:
+    build:
+      context: .
+    restart: always
+    environment:
+      PORT: 3000
+      MONGODB_URL: mongodb://mongou:mongop@mongo:27017/
+    ports:
+      - 3000:3000
